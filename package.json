@@ -1,0 +1,16 @@
+{
+  "name": "myapp",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite dev --host",
+    "build": "npm run lint && vite build",
+    "lint": "prettier --plugin-search-dir . --check . && eslint .",
+    "lint:fix": "prettier --plugin-search-dir=. . --write && eslint . --fix"
+  },
+  "devDependencies": {
+    "@codepiercer/sveltewind": "1.0.1",
+    "@sveltejs/adapter-auto": "2.1.0"
+  },
+  "type": "module"
+}
