@@ -10,7 +10,7 @@
     "postinstall": "husky install"
   },
   "devDependencies": {
-    "@codepiercer/sveltewind": "1.0.1",
+    "@codepiercer/sveltewind": "1.0.2",
     "@sveltejs/adapter-auto": "2.1.0",
     "husky": "8.0.3"
   },
