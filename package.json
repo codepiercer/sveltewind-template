@@ -1,16 +1,17 @@
 {
   "name": "myapp",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": true,
   "scripts": {
     "dev": "vite dev --host",
     "build": "npm run lint && vite build",
+    "preview": "npm run build && vite preview",
     "lint": "prettier --plugin-search-dir . --check . && eslint .",
     "lint:fix": "prettier --plugin-search-dir=. . --write && eslint . --fix",
     "postinstall": "husky install"
   },
   "devDependencies": {
-    "@codepiercer/sveltewind": "1.0.3",
+    "@codepiercer/sveltewind": "1.0.4",
     "@sveltejs/adapter-auto": "2.1.0",
     "husky": "8.0.3"
   },
