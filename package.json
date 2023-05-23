@@ -1,6 +1,6 @@
 {
   "name": "myapp",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "private": true,
   "scripts": {
     "dev": "vite dev --host",
@@ -11,7 +11,7 @@
     "postinstall": "husky install"
   },
   "devDependencies": {
-    "@codepiercer/sveltewind": "1.0.4",
+    "@codepiercer/sveltewind": "1.0.5",
     "@sveltejs/adapter-auto": "2.1.0",
     "husky": "8.0.3"
   },
