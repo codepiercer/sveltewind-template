@@ -1,0 +1,30 @@
+services:
+  app:
+    image: node:18
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: "bash"
+    tty: true
+    stdin_open: true
+    user: 1000:1000
+    environment:
+      - PORT=4000
+    ports:
+      - 4000:4000
+
+  preview:
+    image: node:18
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: "bash -c 'npm i && npm run preview'"
+
+  test:
+    image: mcr.microsoft.com/playwright
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: bash -c 'npm i && npm run test'
+    depends_on:
+      - preview
